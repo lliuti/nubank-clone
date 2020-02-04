@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { StatusBar } from 'react-native';
+import { StatusBar, Animated } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -12,7 +12,7 @@ export const Content = styled.View`
   max-height: 400px;
   z-index: 5;
 `;
-export const Card = styled.View`
+export const Card = styled(Animated.View)`
   flex: 1;
   background: #fff;
   border-radius: 4px;
@@ -21,7 +21,7 @@ export const Card = styled.View`
   position: absolute;
   left: 0;
   right: 0;
-  top: 380px;
+  top: 0;
 `;
 export const CardHeader = styled.View`
   flex-direction: row;
